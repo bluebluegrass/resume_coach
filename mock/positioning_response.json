@@ -1,0 +1,47 @@
+{
+  "roleSummary": "This role owns end-to-end product delivery for growth experiments, requiring strong execution and stakeholder alignment.",
+  "topPriorities": [
+    {
+      "priority": "Accelerate experiment velocity",
+      "evidenceQuote": "You will design and execute rapid A/B tests across the funnel."
+    },
+    {
+      "priority": "Align cross-functional teams",
+      "evidenceQuote": "Partner closely with engineering, design, data, and marketing."
+    },
+    {
+      "priority": "Show measurable outcomes",
+      "evidenceQuote": "Track and report KPI movement tied to each initiative."
+    }
+  ],
+  "yourAngle": "Position yourself as a builder who turns ambiguous growth problems into measurable outcomes with fast iteration.",
+  "strengthsToEmphasize": [
+    "Running structured growth experiments",
+    "Unblocking cross-team dependencies",
+    "Linking roadmap choices to KPI impact"
+  ],
+  "resumeEdits": {
+    "moveUp": [
+      "Bullet showing 18% activation lift from onboarding optimization",
+      "Cross-functional project leadership examples"
+    ],
+    "addOrRephrase": [
+      "Rephrase product bullets to emphasize experiment cadence and impact",
+      "Add one bullet on KPI dashboard ownership"
+    ],
+    "deemphasize": [
+      "Legacy maintenance tasks without clear business outcomes"
+    ]
+  },
+  "gapReframes": [
+    {
+      "gap": "No direct ownership of paid acquisition",
+      "reframe": "Highlight adjacent funnel optimization experience and measurable conversion lifts."
+    },
+    {
+      "gap": "Limited enterprise background",
+      "reframe": "Emphasize transferable stakeholder coordination and scalable process design."
+    }
+  ],
+  "closingLine": "I’d bring a fast, evidence-driven execution style that helps the team learn quickly and compound wins."
+}

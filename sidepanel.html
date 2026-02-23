@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resume Tailor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <h1>Resume Tailor</h1>
+      <p class="subtitle">Upload your resume, get a fit score for the active LinkedIn role, and tailor it step by step.</p>
+
+      <div class="resume-tools">
+        <label class="file-label" for="resumeFile">Upload resume (.txt, .md, .pdf)</label>
+        <input id="resumeFile" type="file" accept=".txt,.md,.pdf,text/plain,text/markdown,application/pdf" />
+        <button id="scoreResume">Score fit</button>
+        <button id="rewriteResume" disabled>Rewrite resume now</button>
+      </div>
+
+      <div id="status" data-tone="info">Ready.</div>
+      <div id="resumeResult"></div>
+      <div id="rewriteResult"></div>
+    </main>
+    <script type="module" src="dist/sidepanel.js"></script>
+  </body>
+</html>

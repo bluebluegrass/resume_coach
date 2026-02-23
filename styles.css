@@ -1,0 +1,120 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #102a43;
+  background: #f7f9fc;
+}
+
+body {
+  margin: 0;
+}
+
+.panel {
+  padding: 14px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.subtitle {
+  margin: 0 0 12px;
+  color: #486581;
+  font-size: 13px;
+}
+
+.resume-tools {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.file-label {
+  font-size: 12px;
+  color: #334e68;
+  width: 100%;
+}
+
+input[type="file"] {
+  font-size: 12px;
+  width: 100%;
+}
+
+button {
+  border: 1px solid #334e68;
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#status {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  background: #d9e2ec;
+}
+
+#status[data-tone="error"] {
+  background: #fbd4d4;
+  color: #7a0616;
+}
+
+#resumeResult section {
+  background: #fff;
+  border: 1px solid #bcccdc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+p,
+li,
+pre {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+pre {
+  white-space: pre-wrap;
+  margin: 0;
+  font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+}
+
+.score {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.score.good {
+  background: #d9f5dd;
+  color: #0f5132;
+}
+
+.score.bad {
+  background: #fde2e1;
+  color: #7a0616;
+}

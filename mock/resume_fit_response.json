@@ -1,0 +1,16 @@
+{
+  "fitScore": 86,
+  "fitRationale": "Your resume already aligns well with this role's data pipeline ownership and cross-functional collaboration requirements.",
+  "missingDetailsQuestions": [
+    "What is your best quantified reliability improvement example (e.g., incident reduction, SLA increase)?",
+    "Which projects best demonstrate ownership from business question to production implementation?",
+    "What specific tools from this role have you used most recently, and in what context?"
+  ],
+  "tailoringSteps": [
+    "Lead with a summary that mirrors the role's core priorities (pipeline ownership, reliability, business impact).",
+    "Move your strongest quantified impact bullet into the first two bullets of your latest role.",
+    "Rephrase 2-3 bullets to include exact role keywords and measurable outcomes.",
+    "Add one bullet showing cross-functional collaboration with Product/Analytics/Engineering.",
+    "Trim older or low-impact bullets to keep focus on relevant achievements."
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "overall_score": 74,
+  "overall_summary": {
+    "one_liner": "Strong backend data execution fit with moderate gaps in explicit experimentation language.",
+    "level_fit": "medium_fit",
+    "top_3_strengths": [
+      "Production pipeline ownership evidence",
+      "Cross-functional collaboration evidence",
+      "Data quality and reliability emphasis"
+    ],
+    "top_3_gaps": [
+      "Limited quantified KPI movement",
+      "Incomplete keyword alignment to posting",
+      "Missing direct statement of experimentation cadence"
+    ]
+  },
+  "rubric": {
+    "dimensions": [
+      {
+        "name": "Pipeline Ownership",
+        "description": "End-to-end design and operation of production data pipelines.",
+        "importance": "core",
+        "weight": 0.24,
+        "what_strong_evidence_looks_like": [
+          "Owns design through monitoring",
+          "Shows production reliability outcomes"
+        ]
+      },
+      {
+        "name": "Data Quality and Reliability",
+        "description": "Testing, observability, and trust in data outputs.",
+        "importance": "core",
+        "weight": 0.2,
+        "what_strong_evidence_looks_like": [
+          "Mentions quality checks and alerting",
+          "Shows measurable reliability impact"
+        ]
+      },
+      {
+        "name": "Cross-functional Delivery",
+        "description": "Partnering with Product, Analytics, and Engineering.",
+        "importance": "core",
+        "weight": 0.2,
+        "what_strong_evidence_looks_like": [
+          "Translates business questions into technical deliverables",
+          "Coordinates with multiple teams"
+        ]
+      },
+      {
+        "name": "Modern Data Stack Alignment",
+        "description": "Fit to listed tools and platform practices.",
+        "importance": "supporting",
+        "weight": 0.16,
+        "what_strong_evidence_looks_like": [
+          "Explicit tool matches",
+          "Recent production examples"
+        ]
+      },
+      {
+        "name": "Outcome Orientation",
+        "description": "Evidence of measurable business or KPI impact.",
+        "importance": "supporting",
+        "weight": 0.2,
+        "what_strong_evidence_looks_like": [
+          "Quantified outcomes",
+          "Direct link to business impact"
+        ]
+      }
+    ]
+  },
+  "dimension_scores": [
+    {
+      "dimension": "Pipeline Ownership",
+      "score_0_to_10": 8,
+      "evidence_tier": "tier_2",
+      "evidence": [
+        {
+          "resume_quote": "Owned end-to-end data pipelines from discovery to production monitoring",
+          "why_it_matters_for_jd": "Directly matches ownership expectations in the role."
+        }
+      ],
+      "missing_or_risky": [
+        "No explicit incident/SLA reliability metric"
+      ]
+    }
+  ],
+  "ats_keyword_coverage": {
+    "coverage_percent": 62,
+    "matched_terms_count": 21,
+    "total_terms_count": 34,
+    "keywords": [
+      {
+        "term": "ETL/ELT",
+        "status": "covered_strong",
+        "resume_evidence": "production-grade ETL/ELT systems"
+      },
+      {
+        "term": "data quality",
+        "status": "covered_strong",
+        "resume_evidence": "implemented automated quality checks"
+      },
+      {
+        "term": "A/B testing",
+        "status": "missing",
+        "resume_evidence": ""
+      }
+    ]
+  },
+  "recommendations": {
+    "step_by_step_tailoring_plan": [
+      "Rewrite summary to mirror role priorities and exact terminology.",
+      "Move your strongest pipeline ownership bullet to top position.",
+      "Add 2-3 quantified outcomes tied to reliability and delivery speed.",
+      "Align tools section to exact job stack terms where truthful.",
+      "Add one bullet highlighting business-question-to-data-model translation."
+    ],
+    "missing_details_to_provide": [
+      "Best quantified reliability improvement example (incident reduction or SLA gain).",
+      "Most recent project using the job's primary orchestration/warehouse tools.",
+      "Example where you influenced KPI movement through data platform work."
+    ],
+    "highest_leverage_resume_edits": [
+      {
+        "edit_title": "Quantify reliability impact",
+        "what_to_change": "Add measurable before/after reliability outcome.",
+        "example_bullet_rewrite": "Improved pipeline reliability by X%, reducing failed daily jobs from A to B through automated data checks.",
+        "expected_score_gain_points": 6
+      }
+    ]
+  },
+  "calibration_notes": {
+    "assumptions_made": [],
+    "not_evidenced_but_common_in_role": [
+      "Experimentation cadence ownership"
+    ],
+    "confidence_0_to_1": 0.78
+  }
+}
