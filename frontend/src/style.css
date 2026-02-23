@@ -1,0 +1,171 @@
+:root {
+  color-scheme: light;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: #13283f;
+  background: linear-gradient(180deg, #f5f8ff 0%, #eef4fb 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(980px, 94vw);
+  margin: 20px auto 40px;
+  display: grid;
+  gap: 14px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.sub {
+  margin: 6px 0 0;
+  color: #39516d;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #d8e4f2;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  border: 1px solid #b8cbe0;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  line-height: 1.45;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+button,
+input[type="file"],
+.text-input {
+  font-size: 14px;
+}
+
+.text-input {
+  border: 1px solid #b8cbe0;
+  border-radius: 10px;
+  padding: 8px 10px;
+  min-width: 260px;
+  background: #fff;
+}
+
+.switch-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #243f5d;
+}
+
+button {
+  border: 1px solid #244469;
+  border-radius: 10px;
+  background: #143c66;
+  color: #fff;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0e3157;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: #8f2735;
+  border-color: #8f2735;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status {
+  font-size: 13px;
+  color: #33516e;
+}
+
+.hint {
+  font-size: 12px;
+  color: #4a617a;
+}
+
+.fit-summary {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.fit-score {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.followup-panel {
+  margin-top: 12px;
+}
+
+.followup-panel h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.followup-textarea {
+  min-height: 140px;
+  margin-top: 8px;
+}
+
+.pre {
+  margin: 8px 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d9e5f2;
+  background: #f7fbff;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .actions {
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+}

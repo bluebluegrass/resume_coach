@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume/JD Fit Scoring MVP</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Resume/JD Fit Scoring</h1>
+        <p class="sub">最简 MVP：本地保存简历，粘贴 JD，执行 Score Fit / Rewrite。</p>
+      </header>
+
+      <section class="card">
+        <h2>0) API 设置（可选）</h2>
+        <p class="hint">可输入你自己的 API Key 与模型名。若留空，将使用后端默认配置。</p>
+        <p class="hint"><strong>隐私说明：</strong>服务端不保存简历/JD/API Key 原文；仅记录耗时、错误码、输入长度。</p>
+        <div class="row">
+          <input
+            id="userApiKey"
+            type="password"
+            placeholder="输入你的 API Key（仅保存在当前浏览器）"
+            class="text-input"
+          />
+        </div>
+        <div class="row">
+          <label class="switch-label" for="oneTimeApiKey">
+            <input id="oneTimeApiKey" type="checkbox" checked />
+            仅本次使用，不保存 API Key
+          </label>
+        </div>
+        <div class="row">
+          <select id="modelPreset" class="text-input"></select>
+          <input id="modelInput" type="text" class="text-input" placeholder="模型名，例如 gpt-4o-mini" />
+        </div>
+        <p id="modelHint" class="hint">可选 GPT 和 Claude 模型。Claude 需要兼容其模型的 provider/key。</p>
+        <div class="row">
+          <button id="saveApiSettingsBtn" type="button">保存 API 设置</button>
+          <button id="clearApiSettingsBtn" type="button" class="danger">清除 API 设置</button>
+        </div>
+        <p id="apiSettingsStatus" class="hint"></p>
+      </section>
+
+      <section class="card">
+        <h2>1) 简历（本地存储）</h2>
+        <textarea id="resumeText" placeholder="粘贴你的简历纯文本"></textarea>
+        <div class="row">
+          <input id="resumeFile" type="file" accept=".txt,.md,text/plain,text/markdown" />
+          <button id="loadResumeFileBtn" type="button">从文件加载</button>
+        </div>
+        <div class="row">
+          <button id="saveResumeBtn" type="button">保存简历到本地</button>
+          <button id="clearResumeBtn" type="button" class="danger">清除本地简历</button>
+        </div>
+        <p id="resumeStoreStatus" class="hint"></p>
+      </section>
+
+      <section class="card">
+        <h2>2) JD</h2>
+        <textarea id="jdText" placeholder="粘贴职位描述（JD）"></textarea>
+      </section>
+
+      <section class="card actions">
+        <button id="scoreBtn" type="button">Score Fit</button>
+        <button id="rewriteBtn" type="button">Rewrite</button>
+        <span id="status" class="status">Ready.</span>
+      </section>
+
+      <section class="card">
+        <h2>3) Fit Result</h2>
+        <div id="fitSummary" class="fit-summary"></div>
+        <div class="followup-panel">
+          <h3>补充回答（用于下一轮评分/改写）</h3>
+          <p class="hint">根据上面的 Missing questions 填写。下次点击 Score Fit 或 Rewrite 会一并发送给模型。</p>
+          <textarea id="followupAnswers" class="followup-textarea" placeholder="在这里回答问题..."></textarea>
+          <div class="row">
+            <button id="fillQuestionsTemplateBtn" type="button">填入问题模板</button>
+            <button id="clearFollowupBtn" type="button" class="danger">清空回答</button>
+          </div>
+          <p id="followupStatus" class="hint"></p>
+        </div>
+        <details>
+          <summary>Criteria Breakdown（展开调试）</summary>
+          <pre id="criteriaDetails" class="pre"></pre>
+        </details>
+        <details>
+          <summary>Category Scores（展开调试）</summary>
+          <pre id="categoryDetails" class="pre"></pre>
+        </details>
+      </section>
+
+      <section class="card">
+        <h2>4) Rewrite Result</h2>
+        <pre id="rewriteOutput" class="pre"></pre>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
