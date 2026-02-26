@@ -3,7 +3,7 @@
   "name": "LinkedIn Resume Tailor MVP",
   "version": "0.2.0",
   "description": "Score and tailor your resume for active LinkedIn job pages.",
-  "permissions": ["activeTab", "scripting", "storage", "tabs", "sidePanel"],
+  "permissions": ["sidePanel", "activeTab", "scripting", "storage", "tabs"],
   "host_permissions": ["https://www.linkedin.com/*"],
   "background": {
     "service_worker": "dist/background.js",
@@ -14,5 +14,16 @@
   },
   "side_panel": {
     "default_path": "sidepanel.html"
-  }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "config/candidate_profile.json",
+        "mock/resume_rewrite_response.json",
+        "vendor/pdf.min.mjs",
+        "vendor/pdf.worker.min.mjs"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
